@@ -1,9 +1,9 @@
 .lazyfadeout {
-    animation: lazyfadeout 1.5s ease 0s forwards;
+    animation: lazyfadeout 2s ease 0s forwards;
 }
 
 .lazyfadein {
-    animation: lazyfadein 1.5s ease 0s forwards;
+    animation: lazyfadein 2s ease 0s forwards;
 }
 
 @keyframes lazyfadein {

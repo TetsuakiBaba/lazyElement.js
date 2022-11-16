@@ -1,4 +1,4 @@
-# lazyElement
+# lazyElement.js
 lazyElement.js is a library that makes it easy to control the fade-in/out of arbitrary elements using observer. It requires only one single line of code.
 
 ## how to use
@@ -8,4 +8,11 @@ lazyElement.js is a library that makes it easy to control the fade-in/out of arb
 ### options
   * once: true/false
 
-## Example
+## Demo
+  * <a href="https://tetsuakibaba.github.io/lazyElement.js/" target="_blank">demo</a>
+
+## Starter Sample
+```
+
+```
+
