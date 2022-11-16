@@ -10,13 +10,17 @@ lazyElement.js is a library that makes it easy to control the fade-in/out of arb
 lazyElement works with css effect, so please use css and js file both.
 lazyElement.css
 
-    <link href="https://cdn.jsdelivr.net/gh/TetsuakiBaba/lazyElement.js@main/lazyElement.css" rel="stylesheet"
+``` css
+<link href="https://cdn.jsdelivr.net/gh/TetsuakiBaba/lazyElement.js@main/lazyElement.css" rel="stylesheet"
         type="text/css" media="all">
+```
 
 lazyElement.js
 
-     <script src="https://cdn.jsdelivr.net/gh/TetsuakiBaba/lazyElement.js@main/lazyElement.js" crossorigin="anonymous"
+``` js
+<script src="https://cdn.jsdelivr.net/gh/TetsuakiBaba/lazyElement.js@main/lazyElement.js" crossorigin="anonymous"
         type="text/javascript"></script>
+```
 
 ## Starter Sample
 ``` html
