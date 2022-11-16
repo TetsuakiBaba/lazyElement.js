@@ -1,9 +1,5 @@
-function respondToVisibility(element, callback) {
-    var options = {
-        root: null,
-        rootMargin: "0px 0px", // 判定基準位置
-        threshold: 0 // 閾値は0
-    };
+function respondToVisibility(element, callback, options) {
+
 
     var observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -13,12 +9,24 @@ function respondToVisibility(element, callback) {
 
     observer.observe(element);
 }
-function addLazyElement(element, options = { once: false }) {
-    respondToVisibility(element, function (element, in_out, observer) {
+function addLazyElement(element,
+    options = {
+        once: false,
+        root: null,
+        rootMargin: '-10% 0px',
+        threshold: 0
+    }) {
 
+    if (!options.once) options.once = false;
+    if (!options.root) options.root = null;
+    if (!options.rootMargin) options.rootMargin = '-25% 0px';
+    if (!options.threshold) options.threshold = 0;
+
+    respondToVisibility(element, function (element, in_out, observer) {
         if (in_out) {
             if (element.classList.contains('lazyfadeout')) element.classList.remove('lazyfadeout');
             if (element.classList.contains('lazyfadein)')) element.classList.remove('lazyfadein');
+
             element.classList.add('lazyfadein');
 
             // 一回だけで終わりたい場合はdisconnectする
@@ -29,5 +37,5 @@ function addLazyElement(element, options = { once: false }) {
             if (element.classList.contains('lazyfadein')) element.classList.remove('lazyfadein');
             element.classList.add('lazyfadeout');
         }
-    })
+    }, options);
 }
