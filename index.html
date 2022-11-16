@@ -7,42 +7,14 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-        .lazyfadeout {
-            animation: lazyfadeout 1.5s ease 0s forwards;
-        }
-
-        .lazyfadein {
-            animation: lazyfadein 1.5s ease 0s forwards;
-        }
-
-        @keyframes lazyfadein {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes lazyfadeout {
-            100% {
-                opacity: 0;
-            }
-
-            0% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link href="lazyElement.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
 
     <div class="container-sm">
         <h1 class="pt-4 pb-4">lazyElement Demo Page</h1>
-        <p class="bg-warning">下にスクロールすると、Why do we use it?のセクションだけがフェードインするデモ</p>
+        <p class="bg-warning">Scroll down and only the "Why do we use it?" section fades in.</p>
         <section>
             <h2>What is Lorem Ipsum?</h2>
             <p>
