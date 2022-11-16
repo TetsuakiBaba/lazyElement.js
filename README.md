@@ -7,3 +7,5 @@ lazyElement.js is a library that makes it easy to control the fade-in/out of arb
 
 ### options
   * once: true/false
+
+## Example
