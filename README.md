@@ -8,6 +8,7 @@ lazyElement.js is a library that makes it easy to control the fade-in/out of arb
 
 ## CDN
 lazyElement works with css effect, so please use css and js file both.
+
 lazyElement.css
 
 ``` css
