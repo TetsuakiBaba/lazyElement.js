@@ -1,7 +1,7 @@
 function respondToVisibility(element, callback) {
     var options = {
         root: null,
-        rootMargin: "0px 0px", // ビューポートの中心を判定基準にする
+        rootMargin: "0px 0px", // 判定基準位置
         threshold: 0 // 閾値は0
     };
 
@@ -29,7 +29,5 @@ function addLazyElement(element, options = { once: false }) {
             if (element.classList.contains('lazyfadein')) element.classList.remove('lazyfadein');
             element.classList.add('lazyfadeout');
         }
-
-        console.log('hello', element, in_out, observer);
     })
 }
