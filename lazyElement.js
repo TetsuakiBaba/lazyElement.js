@@ -25,8 +25,7 @@ function addLazyElement(element,
 
     // 渡されたelement内にimage要素がある場合、読み込みに時間がかかり正しい位置判定ができないまま未定義動作になることがあるため、一旦全ての要素をチェックし、imageがあれば全て読み込まれてからlazyelementを適応する。イメージが読み込まれない限りはエフェクトが適応されないので注意
     // ちゃんと全部のイメージロードできたらlazyloadエフェクトをかける、そうでない場合はエフェクトかけない
-    images = element.querySelectorAll('img');
-    console.log(images.length);
+    let images = element.querySelectorAll('img');
     let image_length = images.length;
     let loaded_count = 0;
 
@@ -38,7 +37,7 @@ function addLazyElement(element,
                     respondToVisibility(element, function (element, in_out, observer) {
                         if (in_out) {
                             if (element.classList.contains('lazyfadeout')) element.classList.remove('lazyfadeout');
-                            if (element.classList.contains('lazyfadein)')) element.classList.remove('lazyfadein');
+                            if (element.classList.contains('lazyfadein')) element.classList.remove('lazyfadein');
 
                             element.classList.add('lazyfadein');
 
@@ -63,7 +62,7 @@ function addLazyElement(element,
         respondToVisibility(element, function (element, in_out, observer) {
             if (in_out) {
                 if (element.classList.contains('lazyfadeout')) element.classList.remove('lazyfadeout');
-                if (element.classList.contains('lazyfadein)')) element.classList.remove('lazyfadein');
+                if (element.classList.contains('lazyfadein')) element.classList.remove('lazyfadein');
 
                 element.classList.add('lazyfadein');
 
